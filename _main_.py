@@ -3,6 +3,13 @@ import streamlit as st
 
 st.title("C-CAT")
 
+st.set_page_config(
+   page_title="C-CAT",
+   page_icon="🧊",
+   layout="wide",
+   initial_sidebar_state="expanded",
+)
+
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 if "openai_model" not in st.session_state:
