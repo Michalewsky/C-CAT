@@ -1,7 +1,7 @@
 from openai import OpenAI
 import streamlit as st
 
-st.title("C-CAT")
+
 
 st.set_page_config(
    page_title="C-CAT",
@@ -9,6 +9,8 @@ st.set_page_config(
    layout="wide",
    initial_sidebar_state="expanded",
 )
+
+st.title("C-CAT")
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
